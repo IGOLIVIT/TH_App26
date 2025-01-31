@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ToolModel" representedClassName="ToolModel" syncable="YES" codeGenerationType="class">
+        <attribute name="toCat" optional="YES" attributeType="String"/>
+        <attribute name="toCond" optional="YES" attributeType="String"/>
+        <attribute name="toName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="WorkModel" representedClassName="WorkModel" syncable="YES" codeGenerationType="class">
+        <attribute name="woCond" optional="YES" attributeType="String"/>
+        <attribute name="woDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="woEar" optional="YES" attributeType="String"/>
+        <attribute name="woH" optional="YES" attributeType="String"/>
+        <attribute name="woM" optional="YES" attributeType="String"/>
+        <attribute name="woName" optional="YES" attributeType="String"/>
+        <attribute name="woNewCond" optional="YES" attributeType="String"/>
+        <attribute name="woTool" optional="YES" attributeType="String"/>
+    </entity>
+</model>
