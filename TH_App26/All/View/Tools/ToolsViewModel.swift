@@ -24,6 +24,7 @@ final class ToolsViewModel: ObservableObject {
     @Published var toName: String = ""
     @Published var toCat: String = ""
     @Published var toCond: String = ""
+    @Published var toDescr: String = ""
 
     @Published var tools: [ToolModel] = []
     @Published var selectedTool: ToolModel?
@@ -36,6 +37,7 @@ final class ToolsViewModel: ObservableObject {
         loan.toName = toName
         loan.toCat = toCat
         loan.toCond = toCond
+        loan.toDescr = toDescr
 
         CoreDataStack.shared.saveContext()
     }

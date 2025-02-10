@@ -3,6 +3,7 @@
     <entity name="ToolModel" representedClassName="ToolModel" syncable="YES" codeGenerationType="class">
         <attribute name="toCat" optional="YES" attributeType="String"/>
         <attribute name="toCond" optional="YES" attributeType="String"/>
+        <attribute name="toDescr" optional="YES" attributeType="String"/>
         <attribute name="toName" optional="YES" attributeType="String"/>
     </entity>
     <entity name="WorkModel" representedClassName="WorkModel" syncable="YES" codeGenerationType="class">

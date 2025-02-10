@@ -77,46 +77,66 @@ struct ToolsView: View {
                             
                                 VStack(spacing: 20) {
                                     
-                                    HStack {
+                                    VStack(spacing: 20) {
                                         
-                                        Text(index.toName ?? "")
-                                            .foregroundColor(.white)
-                                            .font(.system(size: 20, weight: .medium))
+                                        HStack {
+                                            
+                                            Text(index.toName ?? "")
+                                                .foregroundColor(.white)
+                                                .font(.system(size: 20, weight: .medium))
+                                            
+                                            Spacer()
+                                            
+                                            Image(index.toCat ?? "")
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .frame(width: 23)
+                                        }
                                         
-                                        Spacer()
+                                        HStack {
+                                            
+                                            Text(index.toCond ?? "")
+                                                .foregroundColor(.white)
+                                                .font(.system(size: 14, weight: .regular))
+                                                .padding(6)
+                                                .padding(.horizontal, 6)
+                                                .background(RoundedRectangle(cornerRadius: 5).stroke(index.toCond ?? "" == "Working" ? Color.green : Color.orange))
+                                            
+                                            Spacer()
+                                            
+                                            Button(action: {
+                                                
+                                                viewModel.selectedTool = index
+                                                
+                                                withAnimation(.spring()) {
+                                                    
+                                                    viewModel.isDelete = true
+                                                }
+                                                
+                                            }, label: {
+                                                
+                                                Text("Delete")
+                                                    .foregroundColor(.red)
+                                                    .font(.system(size: 14, weight: .medium))
+                                            })
+                                        }
+                                    }
+                                    .onTapGesture {
                                         
-                                        Image(index.toCat ?? "")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: 23)
+                                        withAnimation(.spring()) {
+                                            
+                                            viewModel.isDetail.toggle()
+                                        }
                                     }
                                     
-                                    HStack {
+                                    if viewModel.isDetail {
                                         
-                                        Text(index.toCond ?? "")
+                                        Text(index.toDescr ?? "")
                                             .foregroundColor(.white)
-                                            .font(.system(size: 14, weight: .regular))
-                                            .padding(6)
-                                            .padding(.horizontal, 6)
-                                            .background(RoundedRectangle(cornerRadius: 5).stroke(index.toCond ?? "" == "Working" ? Color.green : Color.orange))
-                                        
-                                        Spacer()
-                                        
-                                        Button(action: {
-                                            
-                                            viewModel.selectedTool = index
-                                            
-                                            withAnimation(.spring()) {
-                                                
-                                                viewModel.isDelete = true
-                                            }
-                                                
-                                        }, label: {
-                                            
-                                            Text("Delete")
-                                                .foregroundColor(.red)
-                                                .font(.system(size: 14, weight: .medium))
-                                        })
+                                            .font(.system(size: 15, weight: .regular))
+                                            .padding()
+                                            .frame(maxWidth: .infinity, alignment: .leading)
+                                            .background(RoundedRectangle(cornerRadius: 6).fill(.white.opacity(0.1)))
                                     }
                                 }
                                 .padding()

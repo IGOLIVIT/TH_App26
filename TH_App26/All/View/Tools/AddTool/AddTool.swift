@@ -134,7 +134,25 @@ struct AddTool: View {
                                 })
                             }
                         }
-                        .padding(.bottom, 100)
+                        
+                        Text("Description")
+                            .foregroundColor(Color("prim"))
+                            .font(.system(size: 14, weight: .regular))
+                        
+                        ZStack(content: {
+                            
+                            Text("Enter")
+                                .foregroundColor(.gray)
+                                .font(.system(size: 15, weight: .regular))
+                                .opacity(viewModel.toDescr.isEmpty ? 1 : 0)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            
+                            TextField("", text: $viewModel.toDescr)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 16, weight: .regular))
+                            
+                        })
+                        .padding(.bottom, 80)
                         
                         Button(action: {
                             
