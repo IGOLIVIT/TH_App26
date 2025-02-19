@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		787761F62D4D20D60086EC1F /* AddTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787761F52D4D20D60086EC1F /* AddTool.swift */; };
 		787761F92D4D27D60086EC1F /* AddWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787761F82D4D27D60086EC1F /* AddWork.swift */; };
+		788381712D66669D00CEB9B5 /* Dtyui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788381702D66669D00CEB9B5 /* Dtyui.swift */; };
+		788381732D6666A600CEB9B5 /* Snutyp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788381722D6666A600CEB9B5 /* Snutyp.swift */; };
+		788381752D6666AF00CEB9B5 /* Wpaer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788381742D6666AF00CEB9B5 /* Wpaer.swift */; };
+		788381822D6668D400CEB9B5 /* U1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788381812D6668D400CEB9B5 /* U1.swift */; };
+		788381842D6668DB00CEB9B5 /* Rev1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788381832D6668DB00CEB9B5 /* Rev1.swift */; };
 		78EE10EC2D4D16510003AB57 /* TH_App26App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE10EB2D4D16510003AB57 /* TH_App26App.swift */; };
 		78EE10EE2D4D16510003AB57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EE10ED2D4D16510003AB57 /* ContentView.swift */; };
 		78EE10F02D4D16520003AB57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78EE10EF2D4D16520003AB57 /* Assets.xcassets */; };
@@ -33,6 +38,11 @@
 /* Begin PBXFileReference section */
 		787761F52D4D20D60086EC1F /* AddTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTool.swift; sourceTree = "<group>"; };
 		787761F82D4D27D60086EC1F /* AddWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWork.swift; sourceTree = "<group>"; };
+		788381702D66669D00CEB9B5 /* Dtyui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dtyui.swift; sourceTree = "<group>"; };
+		788381722D6666A600CEB9B5 /* Snutyp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snutyp.swift; sourceTree = "<group>"; };
+		788381742D6666AF00CEB9B5 /* Wpaer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wpaer.swift; sourceTree = "<group>"; };
+		788381812D6668D400CEB9B5 /* U1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U1.swift; sourceTree = "<group>"; };
+		788381832D6668DB00CEB9B5 /* Rev1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rev1.swift; sourceTree = "<group>"; };
 		78EE10E82D4D16510003AB57 /* TH_App26.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TH_App26.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EE10EB2D4D16510003AB57 /* TH_App26App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TH_App26App.swift; sourceTree = "<group>"; };
 		78EE10ED2D4D16510003AB57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +91,15 @@
 				787761F82D4D27D60086EC1F /* AddWork.swift */,
 			);
 			path = AddWork;
+			sourceTree = "<group>";
+		};
+		788381802D6668CD00CEB9B5 /* Us */ = {
+			isa = PBXGroup;
+			children = (
+				788381812D6668D400CEB9B5 /* U1.swift */,
+				788381832D6668DB00CEB9B5 /* Rev1.swift */,
+			);
+			path = Us;
 			sourceTree = "<group>";
 		};
 		78EE10DF2D4D16500003AB57 = {
@@ -134,6 +153,7 @@
 		78EE10FB2D4D167E0003AB57 /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				788381802D6668CD00CEB9B5 /* Us */,
 				78EE10FE2D4D168B0003AB57 /* ROB */,
 				78EE10FD2D4D16860003AB57 /* Loading */,
 				78EE10FC2D4D16810003AB57 /* Launch */,
@@ -182,6 +202,9 @@
 				78EE11112D4D178F0003AB57 /* CoreDataStack.swift */,
 				78EE11132D4D17970003AB57 /* DateConvert.swift */,
 				78EE11212D4D17C60003AB57 /* CoreModel.xcdatamodeld */,
+				788381702D66669D00CEB9B5 /* Dtyui.swift */,
+				788381722D6666A600CEB9B5 /* Snutyp.swift */,
+				788381742D6666AF00CEB9B5 /* Wpaer.swift */,
 			);
 			path = Extenions;
 			sourceTree = "<group>";
@@ -296,18 +319,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				78EE110E2D4D17820003AB57 /* SettingsView.swift in Sources */,
+				788381752D6666AF00CEB9B5 /* Wpaer.swift in Sources */,
 				78EE11082D4D17700003AB57 /* ToolsViewModel.swift in Sources */,
 				78EE11062D4D176A0003AB57 /* ToolsView.swift in Sources */,
+				788381842D6668DB00CEB9B5 /* Rev1.swift in Sources */,
 				78EE11122D4D178F0003AB57 /* CoreDataStack.swift in Sources */,
 				78EE110A2D4D17770003AB57 /* WorksView.swift in Sources */,
 				78EE111C2D4D17B20003AB57 /* ROB3.swift in Sources */,
 				78EE11142D4D17970003AB57 /* DateConvert.swift in Sources */,
 				78EE110C2D4D177C0003AB57 /* WorksViewModel.swift in Sources */,
 				78EE11232D4D17C60003AB57 /* CoreModel.xcdatamodeld in Sources */,
+				788381712D66669D00CEB9B5 /* Dtyui.swift in Sources */,
 				78EE111E2D4D17B80003AB57 /* LaodingView.swift in Sources */,
 				78EE11102D4D17880003AB57 /* Array.swift in Sources */,
 				787761F62D4D20D60086EC1F /* AddTool.swift in Sources */,
 				78EE111A2D4D17AC0003AB57 /* ROB2.swift in Sources */,
+				788381822D6668D400CEB9B5 /* U1.swift in Sources */,
+				788381732D6666A600CEB9B5 /* Snutyp.swift in Sources */,
 				78EE11162D4D179C0003AB57 /* TabBar.swift in Sources */,
 				78EE11182D4D17A50003AB57 /* ROB1.swift in Sources */,
 				78EE10EE2D4D16510003AB57 /* ContentView.swift in Sources */,
@@ -460,7 +488,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "IOI.TH-App26";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -499,7 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "IOI.TH-App26";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
